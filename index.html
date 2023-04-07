@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    
+    <title>Tip Calculator</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    <div class="container">
+      <div class="bill-amount">
+          <label class="section" for="amount">Bill total:</label>
+          <span class="amount-icon">$</span>
+          <input  class="amount" type="text" id="amount" placeholder="Amount owed" />
+      </div>
+        
+        <div class="tip-amount">
+          <p class="section">Select tip:</p>
+            <ul class="tip">
+              <li class="tips" id="5p" value="5">5%</li>
+              <li class="tips" id="10p" value="10">10%</li>
+              <li class="tips" id="15p" value="15">15%</li>
+              <li class="tips last" id="20p" value="20">20%</li>
+            </ul>
+
+            <button class="open btn">Custom Tip</button>
+            <div class="cstm-tip">
+              <span class="cstm-close">x</span>
+              <input class="amount" type="text" id="custom" placeholder="Custom Tip">
+            </div>
+          </div>
+
+        <div>
+          <label class="section number">Number of people:</label>
+          <div class="people">
+            <i class="bi bi-dash-circle p-icons substract"></i>
+            <span class="nr-people">1</span>
+            <i class="bi bi-plus-circle p-icons add"></i>
+          </div>
+        </div>
+        <button class="calculate btn" >Get Tip</button>
+ 
+        <div class="result hide"></div>
+      </div>
+    </div>
+  </div>
+  <script src="app.js"></script>
+  </body>
+</html>

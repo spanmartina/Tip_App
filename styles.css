@@ -1,0 +1,182 @@
+body {
+  font-family: sans-serif;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: #e4e9eb;
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+.section {
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.section.number {
+  margin-top: 10px;
+}
+
+.amount-icon {
+  cursor: pointer;
+  float: left;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  margin-top: 5px;
+  clear: both;
+  text-align: right;
+  float: left;
+}
+
+.amount {
+  width: 90%;
+  margin-left: 10px;
+  text-align: center;
+  display: flex;
+  padding: 5px 0px;
+  font-size: 16px;
+  color: #3f6b5d;
+  margin-bottom: 15px;
+  border: none;
+  outline: none;
+  height: 22px;
+}
+
+.tip {
+  padding: 0 5px;
+}
+
+.tips {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-right: 30px;
+  margin-left: 2px;
+  margin-bottom: 10px;
+  float: left;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.last {
+  margin-right: 0px;
+}
+
+.active-tip {
+  transition: opacity 0.5s ease;
+  border: 2.5px solid gray;
+}
+
+.custom {
+  display: none;
+  visibility: none;
+  opacity: 0;
+}
+
+.custom.show {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+  display: block;
+}
+
+.tip-amount ul {
+  list-style-type: none;
+}
+
+input {
+  border-radius: 5px;
+  width: 90%;
+  margin-left: 10px;
+  text-align: center;
+  display: flex;
+  float: right;
+}
+
+.btn {
+  color: #fff;
+  background-color: #3f6b5d;
+  padding: 10px 10px;
+  font-size: 16px;
+  text-align: center;
+  font-style: normal;
+  width: 100%;
+  border: 1px solid #4d5650;
+  border-width: 1px 1px 3px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 4px;
+}
+
+/* Costom Tip_____________________________ */
+.cstm-tip {
+  display: none;
+  visibility: none;
+  opacity: 0;
+}
+.show {
+  visibility: visible;
+  pointer-events: auto;
+  opacity: 1;
+  display: block;
+}
+.hide {
+  display: none;
+  visibility: none;
+  opacity: 0;
+}
+.cstm-close {
+  cursor: pointer;
+  float: left;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1;
+  color: #000;
+  text-shadow: 0 1px 0 #fff;
+  opacity: 0.5;
+  margin-top: 15px;
+  clear: both;
+  text-align: right;
+  float: left;
+}
+#custom {
+  width: 90%;
+  margin-left: 10px;
+  margin-top: 12px;
+  margin-bottom: 20px;
+  text-align: center;
+  display: inline-block;
+}
+/*People _____________________________ */
+.people {
+  font-size: 16px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.p-icons {
+  margin: 0 10px;
+}
+
+.result {
+  margin-top: 5px;
+}
+.total {
+  display: block;
+}
